@@ -39,6 +39,8 @@ class App extends Component {
     return !shows.length ?
        <h1 className='tc title'>Loading...</h1>:
            <div className='tc'>
+           <img className= 'logo' src="https://cdn.jsdelivr.net/gh/RonM-11/react_tv_show@master/img/logo.png" alt="logo" />
+
            <h1 className='f1'>Tv shows</h1>
            <SearchBox className='sb' searchChange={this.onSearchChange}/>     
            <Scroll>
