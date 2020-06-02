@@ -37,10 +37,10 @@ class App extends Component {
   
 
     return !shows.length ?
-       <h1 className='tc'>Loading...</h1>:
+       <h1 className='tc title'>Loading...</h1>:
            <div className='tc'>
            <h1 className='f1'>Tv shows</h1>
-           <SearchBox searchChange={this.onSearchChange}/>     
+           <SearchBox className='sb' searchChange={this.onSearchChange}/>     
            <Scroll>
                <CardList shows={filteredShows} />
 
